@@ -28,14 +28,11 @@ class Ninja {
 
 class Sensei extends Ninja {
     constructor(name){
-        super()
-        this.name = name;
-        this.health = 200;
-        this.strength = 10;
-        this.speed = 10;
+        super(name, 200, 10, 10)
         this.wisdom = 10;
     }
     speakWisdom(){
+        this.drinkSake();
         console.log(`${this.name} says: What one programmer can do in a month, two programmers can do in two months.`)
     }
 }
